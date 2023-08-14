@@ -201,6 +201,7 @@ span {
 .skills-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skills-container i {
@@ -339,9 +340,19 @@ span {
   justify-content: space-between;
 }
 
-.contact h2 {
+.contact-h2 {
+  text-align: start;
   margin-bottom: 0;
   font-size: 3.6rem;
+}
+
+.social-media .contact-social {
+  font-size: 1.6rem;
+  margin-right: 8rem;
+}
+
+.contact a {
+  margin-right: 1rem;
 }
 
 /* BREAKPOINTS */
@@ -362,6 +373,11 @@ span {
 
   .contact {
     min-height: auto;
+  }
+
+  .social-media .contact-social {
+    display: none;
+    margin-right: 2rem;
   }
 }
 
